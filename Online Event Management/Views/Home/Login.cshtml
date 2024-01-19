@@ -1,0 +1,63 @@
+﻿@model OnlineEventsManagementSystemMVC.Models.TblRegister
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_LayoutUserPanel.cshtml";
+}
+
+
+<center style="background-color:burlywood">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+
+    @using (Html.BeginForm("Login", "Home", FormMethod.Post))
+    {
+        <table style="width: 433px; height: 370px; background-color:brown; font-size: large; font-weight: bold;">
+            <th colspan="2" align="center"><h1>Sign In</h1></th>
+
+
+            <tr>
+                <td align="center">Username</td>
+                <td align="center">
+                    @Html.TextBoxFor(m => m.userName)
+                </td>
+            </tr>
+
+            <tr>
+                <td style="height: 72px" align="center">Password</td>
+                <td style="height: 72px" align="center">
+                    @Html.TextBoxFor(m => m.password)
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Login" name="Login" class="btn btnOrder" />
+
+                </td>
+            </tr>
+        </table>
+    }
+
+    <br />
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+</center>
+
+
+
+
